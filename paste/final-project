@@ -4,3 +4,18 @@
         "import pandas as pd\n",
         "import numpy as npy\n",
         "import matplotlib.pyplot as plot\n"
+],
+      "metadata": {
+      "id": "OCKdK1DzfPwL"
+      },
+        "execution_count": null,
+        "outputs": []
+},
+      "cell_type": "code",
+      "source": [
+        "# Upload the file after downloading it from https://portal.inmet.gov.br/dadoshistoricos",
+        "# file_path = insert the dataset path here\n",
+        "\n",
+        "# Load dataset into a DataFrame; 'Date' column is set as index and parsed.\n",
+        "relevant_data = pd.read_csv(path_to_file, index_col='Date', parse_dates=True)\n"
+],
